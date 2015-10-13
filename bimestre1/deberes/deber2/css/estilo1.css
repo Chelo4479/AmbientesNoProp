@@ -1,0 +1,27 @@
+table
+{
+	border-style: solid;
+	margin: 0 auto;
+	width: 600px;
+
+}
+td
+{
+	text-align: center;
+
+}
+#celda1
+{
+	
+	background: #F6D8CE;
+
+}
+#s2
+{
+	color: #FF0000;
+
+}
+
+strong{
+	color: #FF0000;
+}
