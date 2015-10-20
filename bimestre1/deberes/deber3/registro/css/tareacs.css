@@ -1,0 +1,305 @@
+body 
+{
+    background-color: #CED8F6;
+}
+
+h1
+{
+	 text-align: center;
+}
+
+table
+{
+	border-spacing: 22px 10px;
+	margin: auto;
+	background: white;
+	text-align: center;
+	height:30px;
+}
+
+#A1
+{
+	background: #2E2E2E;
+	
+
+}
+
+#celda2
+{
+text-align: left;
+}
+
+#table5
+{
+	background: #D8D8D8;
+
+}
+
+#tableq
+{
+	background: white;
+	width:300px;
+  height:300px;
+}
+
+}
+
+img{
+
+	width="35";
+    height="20";
+}
+
+#celda2
+{
+	color: white;
+	font-size: x-large;
+
+}
+
+#celda3
+{
+	color: #2E2E2E;
+	
+
+}
+
+#p1
+{
+	color: #FFFFFF;
+	font-size: large;
+	text-align: center;
+
+}
+
+input
+{
+
+
+
+width:179px;
+height:30px;
+font-size:18px;
+ font-weight:bold;
+}
+
+#btn
+{
+background-color: #04B431;
+color: white;
+width:100px;
+height:30px;
+font-size:18px;
+ font-weight:bold;
+}
+
+#btnp
+{
+background-color: #0080FF;
+color: white;
+width:100px;
+height:30px;
+font-size:12px;
+ font-weight:bold;
+}
+
+#celda10
+{
+	color: white;
+	font-size: large;
+	text-align: center;
+	width:149px;
+
+}
+
+
+
+#btn2
+{
+
+background-color: #58ACFA;
+
+color: #FFFFFF;
+width:99px;
+height:32px;
+font-size:12px;
+ font-weight:bold;
+}
+
+#celda15
+{
+	
+	color: orange;
+	
+
+}
+
+#celda16
+{
+	
+	text-align: right;
+	
+
+}
+
+#table4
+{
+	border-spacing: 31px 11px;
+	margin: auto;
+	background: #0B3861;
+	
+
+}
+
+#celda17
+{
+	
+	color: orange;
+	
+
+}
+#celda18
+{
+	
+	color: orange;
+	
+
+}
+#celda19
+{
+	
+	color: orange;
+	
+
+}
+#celda20
+{
+	
+	color: white;
+	
+}
+#celda21
+{
+	
+	color: white;
+	
+}
+#celda22
+{
+	
+	color: white;	
+
+}
+
+#celda23
+{
+	
+	color: black;
+	font-size:29px;
+	text-align: left;
+    padding: 50px;
+
+	
+}
+#P2
+{
+	color: black;
+	font-size:18px;
+
+}
+
+#celda24
+{
+	
+	color: black;
+	
+}
+#celda25
+{
+	
+	color: black;
+
+}
+#celda26
+{
+	
+	color: black;
+
+}
+#celda27
+{
+	
+	color: #81BEF7;
+}
+
+#tr2
+{
+	text-align: justify;
+	font-size:14px;
+}
+
+
+#btn3
+{
+
+background-color: white;
+text-align: center;
+color: black;
+width:90px;
+height:30px;
+font-size:12px;
+ font-weight:bold;
+}
+
+#celda28
+{
+	
+	color: #81BEF7;
+	font-size:29px;
+}
+
+#celda29
+{
+	
+	color: orange;
+	font-size:14px;
+}
+#table6
+{
+	border-spacing: 12px 11px;
+	margin: auto;
+	background: #0B3861;
+
+}
+
+#celda30
+{
+	
+	color: orange;
+	font-size:24px;
+}
+
+#celda32
+{
+	
+	color: #81BEF7;
+}
+
+#P3
+{
+	text-align: left;
+	color: white;
+	
+
+}
+
+#i1{background-color: #F5DA81;}
+
+#P4
+{
+	text-align: left;
+	color: white;
+	font-size:12px;
+	
+
+}
