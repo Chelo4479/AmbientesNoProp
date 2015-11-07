@@ -1,0 +1,57 @@
+table
+{
+
+ 
+  border-collapse: collapse;
+  text-align: left;
+  width:650px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #0431B4;
+  border: black 4px solid;
+
+}
+tr
+{
+
+ 
+  
+  text-align: left;
+  width:650px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #0431B4;
+  
+
+}
+th 
+{
+
+ 
+  
+  text-align: left;
+  width:650px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #0431B4;
+ 
+
+}
+
+
+h1
+{
+	text-align: center;
+}
+
+#thbtn
+{
+	text-align: center;
+	box-shadow: 2px 2px 5px #999;
+}
+
+#th1
+{
+	text-align: center;
+}
+}
