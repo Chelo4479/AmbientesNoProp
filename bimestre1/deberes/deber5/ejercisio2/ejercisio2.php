@@ -3158,42 +3158,24 @@ echo'</br>';
 echo '<table border="1">';
 echo '<thead>';
 
-echo'<tr>';
 echo '<th>';
 echo'<label for="provincias">Provincias: </label>';
 echo '<select name="provincias" id="provincias">';
 echo '<option selected> Seleccione...</option>';
-echo'<option  value="1">AZUAY</option>';
-echo'<option  value="2">BOLIVAR</option>';
-echo'<option  value="3">CAÑAR</option>';
-echo'<option  value="4">CARCHI</option>';
-echo'<option  value="5">CHIMBORAZO</option>';
-echo'<option  value="6">COTOPAXI</option>';
-echo'<option  value="7">EL ORO</option>';
-echo'<option  value="8">ESMERALDAS</option>';
-echo'<option  value="9">GALAPAGOS</option>';
-echo'<option  value="10">GUAYAS</option>';
-echo'<option  value="11">IMBABURA</option>';
-echo'<option  value="12">LOJA</option>';
-echo'<option  value="13">LOS RIOS</option>';
-echo'<option  value="14">MANABI</option>';
-echo'<option  value="15">MORONA SANTIAGO</option>';
-echo'<option  value="16">NAPO</option>';
-echo'<option  value="17">ORELLANA</option>';
-echo'<option  value="18">PASTAZA</option>';
-echo'<option  value="19">PICHINCHA</option>';
-echo'<option  value="20">SANTA ELENA</option>';
-echo'<option  value="21">SANTO DOMINGO DE LOS TSACHILAS</option>';
-echo'<option  value="22">SUCUMBIOS</option>';
-echo'<option  value="23">TUNGURAHUA</option>';
-echo'<option  value="24">ZAMORA CHINCHIPE</option>';
-echo'<option  value="25">OTRA</option>'; 
+
+foreach ($provincias_cantones_parroquias as $provincia ) 
+{
+echo'<option  value="provincias">'.($provincia['provincia']).'</option>';
+}
+
+
 echo '</select>';
 echo '</th>';
 
+
 echo '<th>';
 echo'<label for="cantones">Cantones: </label>';
-echo '<select name="canton" id="canton">';
+echo '<select name="cantones" id="cantones">';
 echo '<option selected> Seleccione...</option>';
 
 foreach ($provincias_cantones_parroquias as $provincia ) 
@@ -3209,13 +3191,21 @@ echo '<th>';
 echo'<label for="parroquias">Parroquias: </label>';
 echo '<select name="parroquias" id="parroquias">';
 echo '<option selected> Seleccione...</option>';
-echo'<option  value="h">Hombre</option>';
-echo '<option value="m">Mujer</option>';
+
+foreach ($provincias_cantones_parroquias as $provincia ) 
+{
+echo'<option  value="parroquias">'.($provincia['provincia']).'</option>';
+}
+
+
 echo '</select>';
 echo '</th>';
 
 echo '<th>';
 echo '<input id="btn" name="enviar" type="submit" value="Enviar" />';
+
+include('conexionbd.php');
+
 echo '</th>';
 
 echo '</tr>';
