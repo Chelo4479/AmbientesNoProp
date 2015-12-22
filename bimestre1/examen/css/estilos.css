@@ -1,0 +1,27 @@
+table
+{
+	border-spacing: 22px 10px;
+	margin: auto;
+	background: white;
+	text-align: center;
+	height:30px;
+}
+
+#A1
+{
+	background: #3366FF;
+	
+
+}
+#celda2
+{
+text-align: center;
+}
+#btn
+{
+text-align: center;
+}
+#ref
+{
+text-align: center;
+}
