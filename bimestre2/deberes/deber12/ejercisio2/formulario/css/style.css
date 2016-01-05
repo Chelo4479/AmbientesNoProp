@@ -1,0 +1,31 @@
+table{
+	margin: 0 auto;
+}
+td{
+	width: 200px;
+	text-align: center;
+	font-size:200%;
+	height: 70px;
+
+}
+#interes1
+{
+	width: 150px;
+	height: 30px;
+}
+#btn
+{
+	width: 150px;
+	height: 30px;
+}
+
+#btn_eliminar
+{
+	width: 150px;
+	height: 30px;
+}
+#submit
+{
+	width: 150px;
+	height: 30px;
+}
