@@ -1,3 +1,7 @@
+<?php 
+include('rpc/ver_usuario.php');
+?>
+
 <!DOCTYPE html> 
 <html lang="es"> 
 <head> 
@@ -21,32 +25,40 @@
 
     </br>
 
-      <form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-5 control-label">Email</label>
+    <form class="form-horizontal" id="login">
+
+    <div class="form-group">
+    <label for="inputEmail3" class="col-sm-5 control-label">Email:</label>
     <div class="col-sm-3">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      <input type="text" name="email" class="form-control" id="email" placeholder="Email">
     </div>
   </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-5 control-label">Contraseña</label>
+
+   <div class="form-group">
+    <label for="inputPassword3" class="col-sm-5 control-label">Contraseña:</label>
     <div class="col-sm-3">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+      <input type="text" name="contrasena" class="form-control" id="contrasena" placeholder="Contraseña">
     </div>
   </div>
+
   <div class="form-group">
     <div class="col-sm-offset-3 col-sm-9">
       <div class="checkbox">
         <label>
-          <a href="registro.php "> Registrame </a> 
+          <a href="registro.php " id="href-registrarme"> Registrame </a> 
         </label>
       </div>
     </div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
-      <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+      <button  class="btn btn-primary" id="btn" type="submit">Iniciar Sesion</button>
     </div>
+  </div>
+
+  <div id="resultado">
+
+
   </div>
 </form>
 

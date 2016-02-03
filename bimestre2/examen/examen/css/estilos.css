@@ -88,3 +88,20 @@ body
 background:#81DAF5;
 
 }
+
+#tabla-usuarios
+{
+
+margin: 0 auto;
+ vertical-align: top;
+ border: 1px solid #000;
+
+
+
+}
+
+th
+{
+  vertical-align:middle;
+  text-align:center;
+}

@@ -1,6 +1,6 @@
 <?php
 
-$conexion = new mysqli('localhost','root','','bddregistro');
+$conexion = new mysqli('localhost','root','','examen2');
 
 
 

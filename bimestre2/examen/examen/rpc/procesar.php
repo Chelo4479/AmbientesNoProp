@@ -13,7 +13,7 @@ $conn = new mysqli('localhost', 'root',"", "examen2");
     $result = "No se puede establece la conexión con la BDD";
   else{
     $q_insert = "INSERT INTO estudiante(nombres,apellidos,email,contrasena)
-                  VALUES ('$nombre','apellidos', '$email','$contrasena')";
+                  VALUES ('$nombre','$apellidos', '$email','$contrasena')";
 
     $res = $conn->query($q_insert);
 

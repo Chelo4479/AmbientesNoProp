@@ -18,6 +18,12 @@ $(document).ready(function() {
           required: true,
           minlength: 9,
           maxlength: 20,
+          remote: {
+                    url: 'rpc/ver_email.php',
+                    type: 'POST',
+                    delay: 2000    
+                }
+
         },
         contrasena: {
           minlength: 5,
@@ -53,14 +59,14 @@ $(document).ready(function() {
 
     contrasena: {
       required: "Contraseña Obligatoria.",
-      maxlength:"no mas de 15 caracteres",
+      maxlength:"no mas de 8 caracteres",
       minlength: $.validator.format("Al menos {0} caracteres requeridos")
     },
 
     vcontrasena: {
       required: "Campo de Verificacion Obligatorio.",
-      equalTo: 'No coincide con tu correo, por favor, verifica.',
-      maxlength:"no mas de 15 caracteres",
+      equalTo: 'No coincide con tu contraseña, por favor, verifica.',
+      maxlength:"no mas de 8 caracteres",
       minlength: $.validator.format("Al menos {0} caracteres requeridos")
     }
 
@@ -111,27 +117,90 @@ $(document).ready(function() {
     
   });
 
-$('#buscar').on('keyup', function(event) {
-  event.preventDefault();
-  
-  $.ajax({
-    url: 'rpc/get_usuarios.php',
-    type: 'POST',
-    data: {provincia: $('#buscar').val()},
-  })
-  .done(function(msg) {
-    $('#txtcanton').html(msg);
-    $('#tabla-usuarios tbody').html(registros);
-    console.log("success");
-  })
-  .fail(function() {
-    console.log("error");
-  })
-  .always(function() {
-    console.log("complete");
+
+$( "form#login" ).validate({
+     rules: {
+        
+        email: {
+          email: true,
+          required: true,
+          minlength: 9,
+          maxlength: 20,
+          remote: {
+                    url: 'rpc/ver_email.php',
+                    type: 'POST',
+                    delay: 2000    
+                }
+
+        },
+        contrasena: {
+          minlength: 5,
+          maxlength: 8,
+          required: true
+        },
+    },
+    messages: {
+
+    email: {
+      email:"Ingrese una direccion de Email Valida",
+      required: "Email Obligatorio.",
+      minlength: $.validator.format("Al menos {0} caracteres requeridos"),
+      maxlength: $.validator.format("Maximo {0} caracteres requeridos")
+    },
+
+    contrasena: {
+      required: "Contraseña Obligatoria.",
+      maxlength:"no mas de 8 caracteres",
+      minlength: $.validator.format("Al menos {0} caracteres requeridos")
+    },
+
+    
+  }
   });
-  
+
+
+
+$("#btn-cancelar").on('click',function()
+{
+  window.location.href='index.php';
 });
+
+
+$('btn').on('click', function(event) {
+    event.preventDefault();
+
+    if ($('form#login').valid()) 
+    {
+      $.ajax({
+        url: 'rpc/ver_usuario.php',
+        type: 'POST',
+        data: {email:$(' form#login #email').val(),
+               contrasenia:$('form#login #contrasenia').val(),
+             },
+      })
+      .done(function(msg)
+      {
+        if (msg==true) 
+
+          location.href="matriculacion.php";
+          
+          else
+              location.href="registro.php";
+
+          
+          console.log("success"); 
+        
+      })
+      .fail(function() {
+        console.log("error");
+      })
+      .always(function() {
+        console.log("complete");
+      });
+      
+    };
+  });
+
 
 $('#txtprovincia').on('change', function(event) {
   event.preventDefault();
@@ -154,31 +223,4 @@ $('#txtprovincia').on('change', function(event) {
   });
   
 });
-
-
-$('#txtcanton').on('change', function(event) {
-  event.preventDefault();
-  
-  $.ajax({
-    url: 'rpc/get_parroquias.php',
-    type: 'POST',
-    data: {canton: $('#txtcanton').val()},
-  })
-  .done(function(msg) {
-    $('#txtparroquia').html(msg);
-    console.log("success");
-  })
-  .fail(function() {
-    console.log("error");
-  })
-  .always(function() {
-    console.log("complete");
-  });
-  
-});
-
-
-  $("#contact-form").on("hide.bs.modal", function(){
-    $('#contacto')[0].reset();
-  })
 });

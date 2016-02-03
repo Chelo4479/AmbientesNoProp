@@ -22,9 +22,9 @@
       
     </br>
 
-      <form class="form-horizontal"  id="usuario">
+  <form class="form-horizontal"  id="usuario">
 
-        <div class="form-group">
+  <div class="form-group">
     <label for="inputEmail3" class="col-sm-5 control-label">Nombres:</label>
     <div class="col-sm-3">
       <input type="text" name="nombres" class="form-control" id="nombres" placeholder="Nombres">
@@ -45,6 +45,7 @@
       <input type="text" name="email" class="form-control" id="email" placeholder="Email">
     </div>
   </div>
+
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-5 control-label">Contraseña:</label>
     <div class="col-sm-3">
@@ -63,9 +64,10 @@
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
       <button type="button" class="btn btn-primary" id="btn-enviar">Registrame</button>
-      <button type="button" class="btn btn-warning">Cancelar</button>
+      <button type="button" class="btn btn-warning" id="btn-cancelar">Cancelar</button>
     </div>
   </div>
+  
 </form>
 
 
