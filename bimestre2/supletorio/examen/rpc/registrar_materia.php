@@ -44,7 +44,7 @@ if($_POST)
                 if(!$res){
                   echo 'No se pudo eliminar.' . $conn->error;
                 } else {
-                  echo 'Registro eliminado.';
+                  echo 'Registro Guardado.';
                 }
               }
             }
